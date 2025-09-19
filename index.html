@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tech News</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta name="description" content="Latest tech news, gadgets, AI, mobiles, laptops, and more" />
+  <meta name="keywords" content="tech news, gadgets, AI, mobiles, laptops, technology" />
+  <meta name="author" content="Mahtha Tech" />
+  <link rel="manifest" href="manifest.webmanifest" />
+</head>
+<body class="theme-light" >
+  <header>
+    <h1>Tech News</h1>
+    <nav>
+      <button data-cat="all" class="active">All</button>
+      <button data-cat="mobiles">Mobiles</button>
+      <button data-cat="ai">AI</button>
+      <button data-cat="gadgets">Gadgets</button>
+    </nav>
+    <input type="search" id="search" placeholder="Search news..." />
+    <button id="darkToggle" aria-label="Toggle Dark Mode">🌓</button>
+  </header>
+  <main>
+    <section id="news-feed"></section>
+    <div id="loader" class="hidden">Loading news…</div>
+    <div id="error" class="hidden">Error loading news. Please try again later.</div>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.6.2/fuse.min.js"></script>
+  <script src="assets/js/app.js" type="module"></script>
+</body>
+</html>
